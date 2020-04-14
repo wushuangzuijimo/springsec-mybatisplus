@@ -1,0 +1,25 @@
+spring:
+  security:
+    user:
+      name: wushuang
+      password: zxczxc
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mp?characterEncoding=utf-8
+    username: root
+    password: zxczxc
+  profiles:
+    active: dev
+
+
+logging:
+  level:
+    com.wushuang.fromlogin: debug
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  global-config:
+    db-config:
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+
